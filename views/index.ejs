@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<% include ./partials/head %>
+<body>
+  <h1>
+  <% if(user){ %>
+    Welcome, <%= user.fname %> <%= user.lname %>
+   <p>Please Search beer by name, Year, id</p>
+
+  <input type="text" id="bir">
+<button class="btn">CLick</button>
+
+
+
+
+  <% } else { %>
+    Welcome, Guest
+<div class="guest">
+           <a href="/user/login">LOGIN</a>
+           <a href="/user/new">SIGN UP</a>
+         </div>
+
+  <% } %>
+  </h1>
+  <div>
+    <form method="post" action="user/logout?_method=DELETE">
+      <input type="submit" value="Logout">
+    </form>
+
+<!--
+<div class="guest">
+           <a href="/user/login">LOGIN</a>
+           <a href="/user/new">SIGN UP</a>
+         </div>
+ -->
+  </div>
+</body>
+</html>
