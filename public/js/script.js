@@ -4,7 +4,7 @@ $(document).ready(function(){
  const $body   = $('body');
   const $ul     = $('<ul>');
  const $button = $('.btn')
-
+const $div = $('#brApend');
   $button.on('click', function() {
  const $value = $('#bir').val()
 
@@ -22,7 +22,7 @@ $(document).ready(function(){
 // //     // $ul.empty();
 
       data.forEach(function(beers) {
-  let $li = $('<li>').text(beers.style.description);
+  let $p = $('<p>').text(beers.style.description);
   let $img =$('<img>').attr('src', beers.labels.medium)
 // //       //   //let $=$('<li>').text(beers.);
 console.log(data)
@@ -30,7 +30,7 @@ console.log(data)
 // //       //  // $ul.append('',$);
 
 
-    $body.append($li).append($img)
+    $div.append($p).append($img)
        });
 // //       // $div.append($ul);
      }

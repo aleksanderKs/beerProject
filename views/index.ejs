@@ -5,28 +5,42 @@
   <h1>
   <% if(user){ %>
     Welcome, <%= user.fname %> <%= user.lname %>
-   <p>Please Search beer by name, Year, id</p>
+   <h2>Please Search beer by name, Year, id</p>
+
+ <div>
+    <form method="post" action="user/logout?_method=DELETE">
+      <input type="submit" value="Logout">
+    </form>
+</div>
+
 
   <input type="text" id="bir">
 <button class="btn">CLick</button>
 
+<div id="brApend">
 
+</div>
 
 
   <% } else { %>
-    Welcome, Guest
+
+   <h2>Beer Note</h2>
+   <h3> Welcome, Guest</h3>
+
+
 <div class="guest">
-           <a href="/user/login">LOGIN</a>
-           <a href="/user/new">SIGN UP</a>
+           <a href="/user/login"><p>LOGIN</p></a>
+           <a href="/user/new"><p>SIGN UP</p></a>
          </div>
+
 
   <% } %>
   </h1>
-  <div>
+<!--   <div>
     <form method="post" action="user/logout?_method=DELETE">
       <input type="submit" value="Logout">
     </form>
-
+</div> -->
 <!--
 <div class="guest">
            <a href="/user/login">LOGIN</a>
