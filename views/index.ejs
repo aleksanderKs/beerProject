@@ -1,52 +1,52 @@
+
 <!DOCTYPE html>
 <html>
 <% include ./partials/head %>
 <body>
-  <h1>
-  <% if(user){ %>
-    Welcome, <%= user.fname %> <%= user.lname %>
-   <h2>Please Search beer by name, Year, id</p>
+<h1>
+<% if(user){ %>
+Welcome, <%= user.fname %> <%= user.lname %>
+<h2>Please Search beer by name, Year, id</p>
 
- <div>
-    <form method="post" action="user/logout?_method=DELETE">
-      <input type="submit" value="Logout">
-    </form>
+<div>
+<form method="post" action="user/logout?_method=DELETE">
+<input type="submit" value="Logout">
+</form>
 </div>
 
-
-  <input type="text" id="bir">
-<button class="btn">CLick</button>
-
+<input type="text" id="bir">
+<button class="btn" id = "btnSearch">CLick</button>
+<button   id = "feedBackSearch">See Saved FeedBacks</button>
 <div id="brApend">
-
 </div>
+<div id="brApendFeedBack">
+</div><br>
+<textarea id = "feedback" style = "display:none; width : 400px; height:200px;left:0;"></textarea>
+<button id = "submitFeedback" class="btn btn-info" style = "display:none">Save</button>
 
+<% } else { %>
 
-  <% } else { %>
-
-   <h2>Beer Note</h2>
-   <h3> Welcome, Guest</h3>
-
+<h2>Beer Note</h2>
+<h3> Welcome, Guest</h3>
 
 <div class="guest">
-           <a href="/user/login"><p>LOGIN</p></a>
-           <a href="/user/new"><p>SIGN UP</p></a>
-         </div>
+<a href="/user/login"><p>LOGIN</p></a>
+<a href="/user/new"><p>SIGN UP</p></a>
+</div>
 
-
-  <% } %>
-  </h1>
-<!--   <div>
-    <form method="post" action="user/logout?_method=DELETE">
-      <input type="submit" value="Logout">
-    </form>
+<% } %>
+</h1>
+<!-- <div>
+<form method="post" action="user/logout?_method=DELETE">
+<input type="submit" value="Logout">
+</form>
 </div> -->
 <!--
 <div class="guest">
-           <a href="/user/login">LOGIN</a>
-           <a href="/user/new">SIGN UP</a>
-         </div>
- -->
-  </div>
+<a href="/user/login">LOGIN</a>
+<a href="/user/new">SIGN UP</a>
+</div>
+-->
+</div>
 </body>
 </html>

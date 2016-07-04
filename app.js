@@ -10,6 +10,7 @@ const beerAPIRoute    = require('./routes/beer_api');
 const userRoute       = require('./routes/user');
 const request         = require('request');
 const app             = express();
+const feedbackRoute   = require('./routes/feedback');
 const port            = process.env.PORT || 3000;
 app.set('views',path.join(__dirname, 'views'));
 // Adding session as a middleware
@@ -33,7 +34,7 @@ app.use('/', homeRoute);
 app.use('/api',beerAPIRoute);
 
 app.use('/user', userRoute);
-
+app.use('/feedback', feedbackRoute);
 app.listen(port, function() {
   console.log('Server is listening on ',port);
 })
