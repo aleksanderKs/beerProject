@@ -2,14 +2,20 @@
 $(document).ready(function(){
 
  const $body   = $('body');
- const $ul     = $('<ul>');
- const $button = $('.btn');
+ // const $ul     = $('<ul>');
+ const $button = $('#btnSearch');
  const $div = $('#brApend');
  const $divFeedBack = $('#brApendFeedBack');
  const $feedbackbtn = $('#submitFeedback');
  const $feedbackDisplayBtn = $('#feedBackSearch');
  var currentBeer = null;
+  const $ul = $('<ul>')
+// const $p = $('p');
+ //click button, shows beer appended on the page
  $button.on('click', function() {
+$div.empty();
+$ul.empty();
+$divFeedBack.empty();
    const $value = $('#bir').val();
 
    $.ajax({
@@ -21,11 +27,13 @@ $(document).ready(function(){
         'name': $value
       },
       success: function(data) {
-  // //     // let $div= $('.list')
-  // //     // $ul.empty();
+// let $div= $('.list')
+          //$li.empty();
+          // $p.empty();
         data.forEach(function(beers) {
           currentBeer = beers;
-          let $p = $('<p>').text(beers.style.description);
+          //let $li = $('<li>')
+          $ul.text(beers.style.description);
           let $img =$('<img>').attr('src', beers.labels.medium)
       // //       //   //let $=$('<li>').text(beers.);
           console.log(data)
@@ -33,15 +41,19 @@ $(document).ready(function(){
       // //       //  // $ul.append('',$);
 
 
-          $div.append($p).append($img);
+          $div.append($ul).append($img);
+
           $('#feedback').show();
           $('#submitFeedback').show();
         });
+
   // //       // $div.append($ul);
       }
     });
   });
   $feedbackbtn.on('click', function() {
+    $ul.empty();
+    $div.empty();
    const $feedbackValue = $('#feedback').val();
    // console.log('Beers is coming :',currentBeer);
    // console.log('Feedback is coming :',$feedbackValue);
@@ -74,7 +86,8 @@ $(document).ready(function(){
     });
   });
   $feedbackDisplayBtn.on('click', function() {
-
+$ul.empty();
+$div.empty();
    // console.log('Beers is coming :',currentBeer);
    // console.log('Feedback is coming :',$feedbackValue);
    $.ajax({
@@ -89,8 +102,8 @@ $(document).ready(function(){
         data.forEach(function(beer) {
           console.log('Beer:',beer);
           // let $p = $('<p>').text('Description :' + beer.description);
-          let $p = $('<p>').text('Feedback :' + beer.FeedBack);
-          let $img =$('<img>').attr('src', beer['labels[medium]'])
+          let $p = $('<p>').addClass('fed').text('Feedback :' + beer.FeedBack).after("<br />")
+          let $img =$('<img>').addClass("img2").attr('src', beer['labels[medium]'])
 
           console.log(data)
           $divFeedBack.append($p).append($img).append($('<hr>'));
