@@ -1,4 +1,9 @@
 
+
+
+
+/*
+
 /*/*/*.guest {text-align: center; }
 #brApend {width: 280px;}
 a:link, a:visited {
@@ -17,7 +22,7 @@ a:hover, a:active {
 
 p{font-size: 15px}
 
-h2,h3 {text-align: center; }
+h2,h3 {text-align: center; }*/
 
 /*
 a { border-bottom: thin solid;
@@ -105,4 +110,30 @@ a:active, a:focus, a:hover { border-bottom-width: medium; }
     background:linear-gradient(to bottom, #34CACA 5%, #30C9C9 100%);
     background-color:#34CACA;
 }
+html {margin-top:-20px; padding-top:0;}
+
+.container-fluid {background-color: blue;  height: 24%; margin: top:0; padding-top:0;}
+.height-full {
+  height: 35vh;
+  margin: top:0; padding-top:0;
+}
+.bg-dark {
+  background-color: #5C5454;
+  /*background-image: url("../beer2.jpg");*/
+  color: #fff;
+}
+.text-center {color: white; font-size: 40px;}
+#video-background {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+}
+.btn btn-success {padding-top: -440px;margin-top:-200px; margin-bottom: -200px;}
+.btn { margin-bottom: -250px; background-color: #EE3D3D }
+
 */*/*/

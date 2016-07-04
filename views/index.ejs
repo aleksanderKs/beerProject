@@ -26,16 +26,33 @@ Welcome, <%= user.fname %> <%= user.lname %>
 
 <% } else { %>
 
-<h2>Beer Note</h2>
-<h3> Welcome, Guest</h3>
+<!-- <h2>Beer Note</h2>
+<h3> Welcome, Guest</h3> -->
 
-<div class="guest">
-<a href="/user/login"><p>LOGIN</p></a>
-<a href="/user/new"><p>SIGN UP</p></a>
+<!-- <div class="guest"> -->
+<!-- <a href="/user/login"><p>LOGIN</p></a>
+<a href="/user/new"><p>SIGN UP</p></a> -->
+<!--   <div class="container-fluid height-full bg-dark">
+ <h2 class="text-center">Beer Note</h2>
+<h3  class="text-center"> Welcome, Guest</h3>
+</div> -->
+
+<div class="container">
+     <h2 class="text-center">Beer Note</h2>
+<h3  class="text-center"> Welcome, Guest</h3>
+<div class="col-md-12 text-center">
+<a href="/user/login" class="btn btn-success btn-md" role="button">LOG IN</a>
+<a href="/user/new" class="btn btn-success btn-md" role="button">SIGN UP</a>
+<video autoplay="" loop="" class="fillWidth fadeIn animated" poster="https://s3-us-west-2.amazonaws.com/coverr/poster/Traffic-blurred2.jpg" id="video-background">
+    <source src="ber.mp4" >
+
+</div>
 </div>
 
+<!-- </div> -->
+
 <% } %>
-</h1>
+<!-- </h1> -->
 <!-- <div>
 <form method="post" action="user/logout?_method=DELETE">
 <input type="submit" value="Logout">
@@ -47,6 +64,6 @@ Welcome, <%= user.fname %> <%= user.lname %>
 <a href="/user/new">SIGN UP</a>
 </div>
 -->
-</div>
+<!-- </div> -->
 </body>
 </html>

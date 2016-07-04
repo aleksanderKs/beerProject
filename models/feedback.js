@@ -16,8 +16,8 @@ function saveFeedBack(req,res,next) {
   MongoClient.connect(dbConnection, function(err, db) {
     db.collection('feedbacks').insertOne(feedbackItem, function(err, result) {
       if(err) throw err;
-      console.log('Result : ',result);
-      console.log('Inserted successfully');
+      console.log('Results : ',result);
+      console.log('Saved');
       next();
     })
   })
@@ -25,7 +25,7 @@ function saveFeedBack(req,res,next) {
 
 function getFeedBacks(req,res,next){
   var userId = {"userId":req.session.user._id};
-  console.log('user id is:',userId)
+  //console.log('user id is:',userId)
   MongoClient.connect(dbConnection, function(err, db) {
     var cursor =db.collection('feedbacks').find( userId);
     var all_results = [];
@@ -38,7 +38,7 @@ function getFeedBacks(req,res,next){
       if (doc != null) {
         console.log(doc);
          all_results.push(doc);
-         console.dir(doc);
+         console.log(doc);
       } else {
          req['results'] = all_results;
          next();
