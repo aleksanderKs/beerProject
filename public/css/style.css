@@ -34,13 +34,16 @@ a:visited { color: rgb(128,0,128); }
 a:active { color: rgb(192,0,0); } /* :active MUST come after :visited */
 a:active, a:focus, a:hover { border-bottom-width: medium; }
 */
-
+/*p {
+    margin: 0 0 0;
+}*/
 .form-style-8{
-  width:30px; height: 30px;
+  width:20px; height: 20px;
 }
 .form-style-8{
     font-family: 'Open Sans Condensed', arial, sans;
-    width: 500px;
+    width: 200px;
+    width:450px;
     padding: 30px;
     background: #FFFFFF;
     margin: 50px auto;
@@ -53,20 +56,14 @@ a:active, a:focus, a:hover { border-bottom-width: medium; }
     background: #4D4D4D;
     text-transform: uppercase;
     font-family: 'Open Sans Condensed', sans-serif;
-    color: #797979;
+    color: white;
     font-size: 18px;
     font-weight: 100;
     padding: 20px;
     margin: -30px -30px 30px -30px;
 }
 .form-style-8 input[type="text"],
-.form-style-8 input[type="date"],
-.form-style-8 input[type="datetime"],
 .form-style-8 input[type="email"],
-.form-style-8 input[type="number"],
-.form-style-8 input[type="search"],
-.form-style-8 input[type="time"],
-.form-style-8 input[type="url"],
 .form-style-8 input[type="password"],
 .form-style-8 textarea,
 .form-style-8 select
@@ -119,7 +116,7 @@ html {margin-top:-20px; padding-top:0;}
 }
 .bg-dark {
   background-color: #5C5454;
-  /*background-image: url("../beer2.jpg");*/
+  background-image: url("../beer2.jpg");
   color: #fff;
 }
 .text-center {color: white; font-size: 40px;}
@@ -135,5 +132,13 @@ html {margin-top:-20px; padding-top:0;}
 }
 .btn btn-success {padding-top: -440px;margin-top:-200px; margin-bottom: -200px;}
 .btn { margin-bottom: -250px; background-color: #EE3D3D }
+#userlog {background-image: url("/beer3.jpg")}
+#userNew{ background-image: url("/beer4.jpg"); }
+#textUser{ font-size: 20px; text-align: center; background-color: black; color: white; margin: 0 0 0 }
+.logOut {text-align: center; background-color: black}
 
-*/*/*/
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 15px;
+}
+
