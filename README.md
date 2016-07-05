@@ -7,7 +7,10 @@
 
 Synopsis
 
-    Web app name Beer note. Allows user to find and saved their favorite beer, or find a beer with a description and image and save a note.
+    Web app name Beer note. Allows user to find and saved their 
+    favorite beer,
+    or find a beer with a description 
+    and image and save a note.
 
 
 
