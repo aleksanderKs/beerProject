@@ -106,9 +106,8 @@ $div.empty();
           let $img =$('<img>').addClass("img2").attr('src', beer['labels[medium]'])
 
           console.log(data)
-          $divFeedBack.append($p).append($img)
-          // .append($('<hr>'));
-
+          $divFeedBack.append($p).append($('<hr>')).append($img).append($('<hr>'));
+//leave it for now , doesn't work properly
         });
 
       }

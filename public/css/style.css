@@ -141,6 +141,7 @@ button, input, select, textarea {
     font-family: inherit;
     font-size: 15px;
 }
+body{background-color: #EBECE3;}
 img{
     margin-left: 540px;
     float: left;
@@ -151,7 +152,10 @@ img{
     float: left;
     position: relative;
     margin-top: 20px;}
-.fed {text-align: center; margin-left: 0px;     margin-top: 145px;}
+.fed {text-align: center;
+    margin-left: 20px;
+    margin-top: 5px;}
+
 ol, ul {
        margin-left: 400px;
     margin-top: 80px;
