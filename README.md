@@ -2,7 +2,7 @@
 
 
 
- 1. http://i.imgur.com/HK9bMiy.png   My Chart Flor
+ 1. http://i.imgur.com/HK9bMiy.png   My Chart Flow
 
 
 
