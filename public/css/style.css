@@ -2,36 +2,7 @@
 
 
 
-/*
 
-/*/*/*.guest {text-align: center; }
-#brApend {width: 280px;}
-a:link, a:visited {
-    background-color: #f44336;
-    color: white;
-    padding: 1px 22px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    position: relative;
-}
-
-a:hover, a:active {
-    background-color: red;
-}
-
-p{font-size: 15px}
-
-h2,h3 {text-align: center; }*/
-
-/*
-a { border-bottom: thin solid;
-    color: rgb(0,0,192);
-    font-weight: 700;
-    text-decoration: none;
-}
-a:visited { color: rgb(128,0,128); }
-a:active { color: rgb(192,0,0); } /* :active MUST come after :visited */
 a:active, a:focus, a:hover { border-bottom-width: medium; }
 */
 /*p {
@@ -138,11 +109,23 @@ html {margin-top:-20px; padding-top:0;}
 .btn { margin-bottom: -250px; background-color: #EE3D3D }
 #userlog {background-image: url("/beer3.jpg")}
 #userNew{ background-image: url("/beer4.jpg"); }
-#textUser{ font-size: 20px; text-align: center; background-color: black; color: white; margin: 0 0 0 }
+#textUser{ font-size: 30px; text-align: center; background-color: black; color: white; margin: 0 0 0 }
+#textUser1{ font-size: 40px; text-align: center; background-color: #F2C959; color: white; margin: 0 0 0 }
+
+
 .logOut {text-align: center; background-color: black}
-#bir{text-align: center;margin-left: 250px;   width: 250px;
-  height:40px;
-  background: #F6BEBE;
+
+
+#submitFeedback{margin-bottom: 20px;
+    background-color: #EE3D3D;}
+
+#bir:hover {
+    background-color: #E9849F;
+}
+/*#center {margin: 0 auto; background-color: #FFF3F3; width:1000px;height: 125px}*/
+#bir{text-align: center;margin-left: 530px;   width: 230px;
+  height:50px;
+  background: #FFDCDC;
   border: none;
   font-size: 10pt;
   float: left;
@@ -159,21 +142,70 @@ button, input, select, textarea {
     font-size: 15px;
 }
 img{
-  margin-left: 600px;
+    margin-left: 540px;
     float: left;
     position: relative;
-    margin-top: -180px;
+    margin-top: -30px;
 }
-.img2 {        margin-left: 330px;
+.img2 {        margin-left: 500px;
     float: left;
     position: relative;
     margin-top: 20px;}
-.fed {text-align: center; margin-left: 0px;}
+.fed {text-align: center; margin-left: 0px;     margin-top: 145px;}
 ol, ul {
-    margin-top: 100px;
-    margin-bottom: 10px;
+       margin-left: 400px;
+    margin-top: 80px;
+    margin-bottom: 40px;
     font-size: 18px;
     font-weight: 400;
 }
-#brApend {width: 470px}
+#brApend {width: 870px}
 
+
+#feedBackSearch:hover {
+    background-color: #DEDE70; /* Green */
+    color: white;
+}
+
+#feedBackSearch {
+text-align: center;margin-left: 530px;   width: 230px;
+  height:50px;
+  background: #F2E6C4;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: black;
+  padding-left: 25px;
+margin-top: 10px;
+-webkit-transition: background .55s ease;
+  -moz-transition: background .55s ease;
+  -ms-transition: background .55s ease;
+  -o-transition: background .55s ease;
+  transition: background .55s ease;}
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 15px;
+
+
+
+}
+#btnSearch:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+
+#feedback {    overflow: auto;
+    margin-left: 480px;}
+
+#btnSearch {     text-align: center;
+    margin-left: 530px;
+    width: 230px;
+    height: 50px;
+    background: #B1FDD7;
+    border: none;
+    font-size: 10pt;
+
+    color: black;
+    padding-left: 25px;
+    margin-top: 10px; }*/
